@@ -1,0 +1,120 @@
+/* pages/index/index.wxss */
+
+/* 商城页 wrapper */
+.index-wrapper{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* 轮播图 */
+.index-wrapper .banner{
+  flex: 0 0 280rpx;
+  overflow: hidden;
+}
+
+.index-wrapper .banner image{
+  display: block;
+  width: 100%;
+}
+
+/* 商品 */
+.index-wrapper .goods{
+  flex: auto;
+  background-color: #fff;
+  display: flex;
+}
+
+/* 商品菜单 */
+.index-wrapper .goods .menu{
+  flex: 0 0 80px;
+  border-right: 1px solid #d1d1d1;
+  height: 830rpx;
+}
+
+.index-wrapper .goods .menu .menu-item{
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+}
+
+.index-wrapper .goods .menu .menu-item.active{
+  background-color: #1296db;
+  color: #fff;
+}
+
+/* 商品列表 */
+.index-wrapper .goods .list{
+  flex: auto;
+  padding: 10px;
+  height: 830rpx;
+}
+
+.index-wrapper .goods .list .list-item{
+  box-sizing: border-box;
+  /* height: 250px; */
+  padding-top: 10px;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.index-wrapper .goods .list .list-item:last-child{
+  border-bottom: none;
+}
+
+.index-wrapper .goods .list .category{
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+
+.index-wrapper .goods .list .good{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.index-wrapper .goods .list .good .cover{
+  flex: 0 0 60px;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.index-wrapper .goods .list .good .cover image{
+  width: 60px;
+}
+
+.index-wrapper .goods .list .good .info{
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.index-wrapper .goods .list .good .info .name{
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.index-wrapper .goods .list .good .info .price{
+  font-size: 12px;
+  color: tomato;
+}
+
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

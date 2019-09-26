@@ -1,0 +1,59 @@
+<!--pages/details/details.wxml-->
+<view class="details-wrapper">
+  <!-- 商品图 -->
+  <view class="banner">
+    <swiper indicator-dots="true" interval="3000" duration="500" circular="true" autoplay="true">
+      <block wx:for="{{details.banner}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>    
+  </view>
+
+  <!-- 商品信息 -->
+  <view class="info">
+    <view class="name">{{details.name}}</view>
+    <view class="price">￥{{details.price}}</view>
+    <view class="sell">月销{{details.sell}}件</view>
+  </view>
+
+  <!-- 间隔组件 -->
+  <blank></blank>
+
+  <!-- 服务 -->
+  <view class='service'>
+    <view class="delivery">配送：快递</view>
+    <view class="guarantee">保障：七天无理由退款</view>
+  </view>
+
+  <!-- 间隔组件 -->
+  <blank></blank>
+
+  <!-- 商品详情 -->
+  <view class="details">
+    <view class="title">商品详情</view>
+    <view wx:for="{{details.details}}" wx:key="{{index}}">
+      <image src="{{item}}" mode="widthFix"></image>
+    </view>
+  </view>
+
+  <!-- 选项菜单 -->
+  <view class="menu">
+    <view class="contact">
+      <image src="../../images/contact.png" mode="aspectFill"></image>
+      <text>联系客服</text>
+    </view>
+    <view class="store">
+      <image src="../../images/store.png" mode="aspectFill"></image>
+      <text>进入店铺</text>
+    </view>
+    <view class="cart" bindtap="toCart">
+      <image src="../../images/cart.png" mode="aspectFill"></image>
+      <text>查看购物车</text>
+    </view>
+    <view class="add" bindtap="addCart">加入购物车</view>
+    <view class="buy">立即购买</view>
+  </view>
+
+</view>

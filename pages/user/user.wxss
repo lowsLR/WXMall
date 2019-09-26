@@ -1,0 +1,25 @@
+/* pages/user/user.wxss */
+
+.user-wrapper .info{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.user-wrapper .info .avatar{
+  flex: 0 0 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.user-wrapper .info .name{
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.user-wrapper .setting{
+  padding: 10px;
+}

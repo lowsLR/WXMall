@@ -1,0 +1,34 @@
+<!--pages/cart/cart.wxml-->
+<view class="cart-wrapper">
+  <blank></blank>
+  <!-- 购物车列表 -->
+  <view class="list">
+    <block wx:for="{{cartList}}" wx:key="{{index}}">
+      <view class="item">
+        <view class="checkbox">
+          <checkbox></checkbox>
+        </view>
+        <view class="pic" data-index="{{index}}" bindtap="toDetails">
+          <image src="{{item.cover}}" mode="widthFix"></image>
+        </view>
+        <view class="info" data-index="{{index}}" bindtap="toDetails">
+          <view class="name">{{item.name}}</view>
+          <view class="price" >￥{{item.price}}</view>
+          <view class="count">×{{index+1}}</view>
+        </view>
+      </view>
+      <blank></blank>
+    </block>
+  </view>
+
+  <!-- 选项菜单 -->
+  <view class="menu">
+    <view class="checkbox">
+      <checkbox></checkbox>全选
+    </view>
+    <view class="total">合计￥1234</view>
+    <view class="pay">结算(6)</view>
+  </view>
+
+
+</view>

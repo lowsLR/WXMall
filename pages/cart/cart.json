@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "blank": "/components/blank/blank"
+  },
+  "navigationBarTitleText": "购物车"
+}

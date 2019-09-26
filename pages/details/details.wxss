@@ -1,0 +1,136 @@
+/* pages/details/details.wxss */
+
+/* 轮播图 */
+.details-wrapper .banner swiper{
+  width: 100vw;
+  height: 100vw;
+}
+
+.details-wrapper .banner image{
+  width: 100%;
+  height: 100%;
+
+}
+
+/* 商品信息 */
+.details-wrapper .info{
+  padding: 10px;
+  background-color: #fff;
+}
+
+.details-wrapper .info .name{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.details-wrapper .info .price{
+  font-size: 20px;
+  font-weight: bold;
+  color: tomato;
+  margin-bottom: 5px;
+}
+
+.details-wrapper .info .sell{
+  font-size: 12px;
+}
+
+/* 服务 */
+.details-wrapper .service{
+  background-color: #fff;
+  padding: 10px;
+}
+
+.details-wrapper .service .delivery{
+  margin-bottom: 10px;
+}
+
+/* 商品详情 */
+.details-wrapper .details .title{
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.details-wrapper .details image{
+  display: block;
+  width: 100%;
+}
+
+/* 选项菜单 */
+.details-wrapper .menu{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #fff;
+  height: 40px;
+  display: flex;
+}
+
+.details-wrapper .menu .contact{
+  flex: 2;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.details-wrapper .menu .store{
+  flex: 2;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;  
+  justify-content: space-around;
+}
+
+.details-wrapper .menu .cart{
+  flex: 2;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.details-wrapper .menu .contact image,
+.details-wrapper .menu .store image,
+.details-wrapper .menu .cart image{
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  align-self: center;
+}
+
+.details-wrapper .menu .contact text,
+.details-wrapper .menu .store text,
+.details-wrapper .menu .cart text{
+  flex: 0 0 8px;
+  font-size: 8px;
+  align-self: center;
+}
+
+.details-wrapper .menu .add{
+  flex: 3;
+  height: 40px;
+  background-color: #f0f0f0;
+  color: #1296db;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+}
+
+.details-wrapper .menu .buy{
+  flex: 3;
+  height: 40px;
+  background-color: #1296db;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+}
